@@ -1,4 +1,4 @@
-PR = "r6"
+PR = "r7"
 
 DESCRIPTION = "ti-apps-launcher service"
 HOMEPAGE = "https://github.com/TexasInstruments/ti-apps-launcher"
@@ -12,7 +12,7 @@ DEPENDS = "qtbase qtquick3d qtmultimedia"
 RDEPENDS:${PN} = "qtquick3d qtmultimedia bash"
 
 BRANCH = "master"
-SRCREV = "a9064a2513ffe0c6536c38c5feb059c6113490ca"
+SRCREV = "93465ed4ef3e0e456b186870c3dbcbf32a05e03e"
 
 SRC_URI = " \
     git://github.com/TexasInstruments/ti-apps-launcher.git;protocol=https;branch=${BRANCH} \
@@ -22,10 +22,12 @@ SRC_URI = " \
 S = "${WORKDIR}/git"
 
 APPS_DEFINES = ""
-APPS_DEFINES:am62xx = "SOC_AM62"
+APPS_DEFINES:am62xx-evm = "SOC_AM62"
+APPS_DEFINES:am62xx-lp-evm = "SOC_AM62_LP"
 
 CONFIG_FILE = ""
-CONFIG_FILE:am62xx = "am62xx-evm"
+CONFIG_FILE:am62xx-evm = "am62xx-evm"
+CONFIG_FILE:am62xx-lp-evm = "am62xx-lp-evm"
 
 inherit qmake5 deploy systemd
 
