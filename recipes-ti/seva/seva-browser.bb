@@ -1,8 +1,8 @@
-PR = "r0"
+PR = "r1"
 SUMMARY = "Seva Browser Docker Image Tarball"
 
-LICENSE = "TI-TSPA"
-LIC_FILES_CHKSUM = "file://${COREBASE}/../meta-ti/meta-ti-bsp/licenses/TI-TSPA;md5=bb6bc27cd44417c389a180bd62f552a0"
+LICENSE = "TI-TFL"
+LIC_FILES_CHKSUM = "file://${COREBASE}/../meta-ti/meta-ti-bsp/licenses/TI-TFL;md5=a1b59cb7ba626b9dbbcbf00f3fbc438a"
 
 COMPATIBLE_MACHINE = "am62xx"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
