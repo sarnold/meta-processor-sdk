@@ -2,7 +2,7 @@ DESCRIPTION = "Imagination PowerVR SDK binaries/examples"
 LICENSE = "MIT"
 
 SRC_URI = " \
-    git://github.com/powervr-graphics/Native_SDK.git;protocol=https;branch=${BRANCH} \
+    gitsm://github.com/powervr-graphics/Native_SDK.git;protocol=https;branch=${BRANCH} \
     file://0001-PATCH-use-library-so-names-for-linking.patch \
 "
 
